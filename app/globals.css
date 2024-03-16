@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/soehne-buch.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: italic;
+	font-weight: 400;
+	src: url(/fonts/soehne-buch-kursiv.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: normal;
+	font-weight: 500;
+	src: url(/fonts/soehne-kraftig.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: italic;
+	font-weight: 500;
+	src: url(/fonts/soehne-kraftig-kursiv.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: normal;
+	font-weight: 600;
+	src: url(/fonts/soehne-halbfett.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne;
+	font-style: italic;
+	font-weight: 600;
+	src: url(/fonts/soehne-halbfett-kursiv.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne Mono;
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/soehne-mono-buch.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne Mono;
+	font-style: normal;
+	font-weight: 700;
+	src: url(/fonts/soehne-mono-halbfett.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne Mono;
+	font-style: italic;
+	font-weight: 400;
+	src: url(/fonts/soehne-mono-buch-kursiv.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne Circle;
+	font-style: normal;
+	font-weight: 400;
+	src: url(/fonts/soehne-circle-buch.woff2) format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: Soehne Circle;
+	font-style: normal;
+	font-weight: 600;
+	src: url(/fonts/soehne-circle-halbfett.woff2) format("woff2");
+}
+
+html {
+	font-family: Soehne, ui-sans-serif, system-ui, -apple-system;
+	font-variation-settings: normal;
+	line-height: 1.5;
+	tab-size: 4;
+}
+
+.h-dfull {
+	height: 100dvh;
+	height: 100vh;
+}
+
+::-webkit-scrollbar {
+	height: 1rem;
+	width: 0.5rem;
+}
+::-webkit-scrollbar:horizontal {
+	height: 0.5rem;
+	width: 1rem;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: hsla(0, 0%, 89%, 0.8);
+	border-color: rgba(255, 255, 255);
+	border-radius: 9999px;
+	border-width: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(227, 227, 227);
+}
+.dark ::-webkit-scrollbar-thumb {
+	background-color: hsla(0, 0%, 100%, 0.1);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+	background-color: hsla(0, 0%, 100%, 0.3);
+}
+@media (min-width: 768px) {
+	.scrollbar-trigger ::-webkit-scrollbar-thumb {
+		visibility: hidden;
+	}
+	.scrollbar-trigger:hover ::-webkit-scrollbar-thumb {
+		visibility: visible;
+	}
+}
